@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiawase (VIP) Collab Members</title>
     <style>
+        /* Your existing CSS */
         img {
             width: 200px;
             border: 5px solid black;
@@ -17,18 +18,39 @@
             color: white;
         }
         html, body {
-            height: 100%;
             margin: 0;
+            padding: 0;
+            height: 100%;
             background: rgb(0,229,255);
             background: linear-gradient(0deg, rgba(0,229,255,1) 0%, rgba(45,109,253,1) 100%);
             background-repeat: no-repeat;
             background-size: cover;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
             text-align: center;
-            height: cover;
+        }
+        /* Button styling */
+        #mobileSimulateBtn {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function isMobile() {
+            return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         }
 
-
-    </style>
+        function simulateMobile() {
+            window.location.href = "/mobile"; // Redirect to the /mobile page
+        }
+    </script>
 </head>
 <body>
     <h1>Shiawase (VIP) Collab Members</h1>
@@ -37,12 +59,8 @@
     <abbr title="ThatOneCoolDoge"><img src="tocd.webp" alt="ThatOneCoolDoge"></abbr>
     <abbr title="Gadef Birb"><img src="gb.webp" alt="Gadef Birb"></abbr>
     <abbr title="LuckyFox12"><img src="lf12.webp" alt="LuckyFox12"></abbr>
+    
+    <!-- Temporary button to simulate mobile detection -->
+    <button id="mobileSimulateBtn" onclick="simulateMobile()">Simulate Mobile</button>
 </body>
 </html>
-
-
-
-
-
-
-
