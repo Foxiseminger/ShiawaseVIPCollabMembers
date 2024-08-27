@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiawase (VIP) Collab Members</title>
     <style>
-        /* Your existing CSS */
         img {
             width: 200px;
             border: 5px solid black;
             border-radius: 10px;
             margin: 0 10px;
         }
-        h1, h5 {
+        h1, h5, p, a {
             font-family: Arial, sans-serif;
             font-weight: 200;
             color: white;
@@ -22,7 +21,7 @@
             padding: 0;
             height: 100%;
             background: rgb(0,229,255);
-            background: linear-gradient(0deg, rgba(0,229,255,1) 0%, rgba(45,109,253,1) 100%);
+            background: url("mobile/bg.png");
             background-repeat: no-repeat;
             background-size: cover;
             overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -41,6 +40,11 @@
             cursor: pointer;
             font-size: 16px;
         }
+        iframe {
+            width: 450px;
+            height: 300px;
+            border-radius: 20px;
+        }
     </style>
     <script>
         function isMobile() {
@@ -48,7 +52,7 @@
         }
 
         function simulateMobile() {
-            window.location.href = "https://foxiseminger.github.io/ShiawaseVIPCollabMembers/mobile"; // Redirect to the /mobile page
+            window.location.href = "/mobile"; // Redirect to the /mobile page
         }
     </script>
 </head>
@@ -59,6 +63,12 @@
     <abbr title="ThatOneCoolDoge"><img src="tocd.webp" alt="ThatOneCoolDoge"></abbr>
     <abbr title="Gadef Birb"><img src="gb.webp" alt="Gadef Birb"></abbr>
     <abbr title="LuckyFox12"><img src="lf12.webp" alt="LuckyFox12"></abbr>
+    <br>
+    <br>
+    <hr>
+    <h5>Shiawase (VIP) Full Layout</h5>
+    <p>Footage recorded by <a href="https://gdbrowser.com/u/notrbxian">NotRbxian</a></p>
+    <iframe src="src/shiawase-vip-layout.mp4" frameborder="0"></iframe>
     
     <!-- Temporary button to simulate mobile detection -->
     <button id="mobileSimulateBtn" onclick="simulateMobile()">Simulate Mobile</button>
